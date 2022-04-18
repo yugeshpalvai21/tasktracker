@@ -1,7 +1,26 @@
+import Tasks from './components/Tasks';
+import { v4 as uuidv4 } from 'uuid';
+
 const App = () => {
+  const tasks = [{
+    id: uuidv4(),
+    title: 'First Task',
+    description: 'small description about first task',
+    reminder: false,
+    finished: false
+  },
+  {
+    id: uuidv4(),
+    title: 'Second Task',
+    description: 'small description about second task',
+    reminder: false,
+    finished: true
+  }]
+
   return (
     <div>
-      <h1>Welcome To Task Trackeeeer App</h1>
+      <h1>Welcome To Task Tracker App</h1>
+      <Tasks tasks={tasks} />
     </div>
   )
 }
