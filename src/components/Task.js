@@ -1,20 +1,18 @@
-const Task = (props) => {
+const Task = ({ title, description, reminder, finished }) => {
  return (
    <div>
-     <h3>Title - { props.task.title }</h3>
-     <p>Description - { props.task.description }</p>
-     <p>Finished - { props.task.finished ? "YES" : "NO" } </p>
+     <h3>Title - { title }</h3>
+     <p>Description - { description }</p>
+     <p>Finished - { finished ? "YES" : "NO" } </p>
    </div>
  )
 }
 
 Task.defaultProps = {
-  task: {
     title: 'defaultTitle',
     description: 'defaultDescription',
     reminder: false,
-    finished: false
-  }
+    finished: false 
 }
 
 export default Task;

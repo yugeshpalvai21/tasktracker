@@ -1,9 +1,10 @@
+import { getByTitle } from '@testing-library/react';
 import Task from './Task.js';
 
-const Tasks = (props) => {
+const Tasks = ({ tasks }) => {
   return (
     <div>
-      { props.tasks.length > 0 ? props.tasks.map((task) => <Task task={task} />) : "No Tasks" }
+      { tasks.length > 0 ? tasks.map((task) => <Task {...task} />) : "No Tasks" }
     </div>
   )
 }
