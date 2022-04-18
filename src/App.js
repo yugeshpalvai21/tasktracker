@@ -1,3 +1,5 @@
+import Tasks from './components/Tasks';
+
 const App = () => {
   const tasks = [{
     title: 'First Task',
@@ -15,7 +17,7 @@ const App = () => {
   return (
     <div>
       <h1>Welcome To Task Trackeeeer App</h1>
-      {tasks.map((task) => (<p>{task.title}</p>))}
+      <Tasks tasks={tasks} />
     </div>
   )
 }
