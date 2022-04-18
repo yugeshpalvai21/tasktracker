@@ -11,7 +11,7 @@ const App = () => {
     title: 'Second Task',
     description: 'small description about second task',
     reminder: false,
-    finished: false
+    finished: true
   }]
 
   return (
