@@ -8,4 +8,13 @@ const Task = (props) => {
  )
 }
 
+Task.defaultProps = {
+  task: {
+    title: 'defaultTitle',
+    description: 'defaultDescription',
+    reminder: false,
+    finished: false
+  }
+}
+
 export default Task;

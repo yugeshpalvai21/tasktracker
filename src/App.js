@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Welcome To Task Trackeeeer App</h1>
+      <h1>Welcome To Task Tracker App</h1>
       <Tasks tasks={tasks} />
     </div>
   )
