@@ -18,8 +18,8 @@ const App = () => {
     finished: true
   }])
 
-  const handleDeleteTask = () => {
-    console.log('deleting task');
+  const handleDeleteTask = (id) => {
+    console.log(`deleting task - ${id}`);
   }
   
   return (
