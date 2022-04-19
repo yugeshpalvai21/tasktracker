@@ -17,11 +17,15 @@ const App = () => {
     reminder: false,
     finished: true
   }])
+
+  const handleDeleteTask = (id) => {
+    setTasks(tasks.filter((task)  => task.id != id ));    
+  }
   
   return (
     <div>
       <h1>Welcome To Task Tracker App</h1>
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} deleteTask={handleDeleteTask}/>
     </div>
   )
 }
