@@ -1,4 +1,3 @@
-import { getByTitle } from '@testing-library/react';
 import Task from './Task.js';
 
 const Tasks = ({ tasks }) => {
