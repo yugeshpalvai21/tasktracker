@@ -19,7 +19,7 @@ const App = () => {
   }])
 
   const handleDeleteTask = (id) => {
-    console.log(`deleting task - ${id}`);
+    setTasks(tasks.filter((task)  => task.id != id ));    
   }
   
   return (
